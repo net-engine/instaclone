@@ -26,7 +26,18 @@ You must have Docker Desktop installed for this to work, as the environment is d
 1. Once that has completed, type `docker compose up db -d`
 1. Once that has completed, type `docker compose run --rm web bundle exec rails db:setup`
 1. Once that has completed, type `docker compose up -d`
-1. In your browser, navigate to `https://localhost:3000`
+1. In your browser, navigate to `http://localhost:3000`
+
+### Other helpful commands
+1. To stop the app, type `docker compose stop`
+1. To restart after stopping, type `docker compose up -d`
+1. To view Rails logs, type `docker compose logs -f web`
+
+### To delete the application
+To remove all the Docker images, containers, and volumes, type `docker compose down --rmi all -v`
+
+**WARNING** You will need to redo the steps from "How to run this application" to start again.
+
 
 ### Additional information:
 1. There is no CSS and JS included currently
@@ -36,7 +47,7 @@ You must have Docker Desktop installed for this to work, as the environment is d
 1. Do **not** spend more than 120 minutes on your implementation. You do not need to complete all the steps. We are evaluating what you can do in this timeframe and the quality of your work, not necessarily the quantity of code.
    We are looking for well structured and written code, following current Rails best practices. We will not evaluate your view logic. Testing is not a necessity, but will score you bonus points.
    Submission
-   
+
 #### Submission
 Either
 1. Add the project as a public repository on your GitHub account, or
