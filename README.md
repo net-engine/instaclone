@@ -2,7 +2,7 @@
 
 ## InstaClone
 
-Thanks for your interest in The Scout Talent Group. We are excited that you are interested in joining us as a Ruby on Rails developer.
+Thanks for your interest in the Scout Talent Group. We are excited that you are interested in joining us as a Ruby on Rails developer.
 Congratulations! You have made it to the next round: a coding challenge.
 
 ### The Challenge
@@ -26,9 +26,11 @@ You must have Docker Desktop installed for this to work, as the environment is d
 1. Once that has completed, type `docker compose up db -d`
 1. Once that has completed, type `docker compose run --rm web bundle exec rails db:setup`
 1. Once that has completed, type `docker compose up -d`
-1. In your browser, navigate to `http://localhost:3000`
+1. In your browser, navigate to `http://localhost:3000` to view the application.
 
 ### Other helpful commands
+1. Commands, such as database migrations, must be run from inside the container. 
+Type `docker compose exec web bash` to get access to the command line inside the container.
 1. To stop the app, type `docker compose stop`
 1. To restart after stopping, type `docker compose up -d`
 1. To view Rails logs, type `docker compose logs -f web`
